@@ -20,7 +20,7 @@
       <form action="{% url 'ticket' event.id %}" method="POST">
         {% csrf_token %}
         <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-          data-key="pk_test_FIBNuuxsBX0DsU1G4DXIYWWt00cpsWzsQk"
+          data-key="{{ key }}"
           data-description="Buy A Ticket"
           data-amount="500"
           data-locale="auto">
