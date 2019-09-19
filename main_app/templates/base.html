@@ -51,7 +51,7 @@
   </footer>
 
   <ul class="sidenav mobile-nav" id="mobile-demo">
-      {% if user.is_authenticated %}
+    {% if user.is_authenticated %}
       {% if user.is_staff %}
         <li><a href="{% url 'venue_create' %}">Add a Venue</a></li>
         <li><a href="{% url 'venue_index' %}">View My Venues</a></li>
