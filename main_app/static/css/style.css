@@ -179,7 +179,15 @@ footer  {
 }
 
 .formation-login {
-  width: fit-content;
+  padding-bottom: 35px;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+.formation-login p {
+  margin-top: -10px;
 }
 
 /* cards and builtins */
@@ -405,6 +413,25 @@ input#search.search-bar {
 
 /* 992px width and down */
 @media only screen and (max-width: 992px) {
+  .mobile-nav {
+    background: #00695c;
+    margin-top: 50%;
+    transform: translateY(-50%);
+    height: fit-content;
+    text-align: center;
+  }
+
+  .sidenav {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    width: 100%;
+  }
+
+  .mobile-nav li a {
+    color: #fff;
+    font-size: 20px;
+  }
+
   .card-det {
     width: 80%;
   }
@@ -459,6 +486,10 @@ input#search.search-bar {
   .events-header {
     padding-top: 50px;
     padding-bottom: 25px;
+  }
+
+  .formation-login {
+    width: 90%;
   }
 
   .formation-add {
