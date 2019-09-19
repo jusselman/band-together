@@ -26,6 +26,8 @@
           data-locale="auto">
         </script>
       </form>
+    {% else %}
+      <p class="card-title">SOLD OUT!</p>
     {% endif %}
     {% if event.venue.user == user %}
       <div class="edit-event">
