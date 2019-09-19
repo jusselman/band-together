@@ -19,14 +19,19 @@
     {% if event.total_tickets > 0 %}
       <form action="{% url 'ticket' event.id %}" method="POST">
         {% csrf_token %}
-        <button type="submit" class="btn">Tickets</button>
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="{{ key }}"
+          data-description="Buy A Ticket"
+          data-amount="500"
+          data-locale="auto">
+        </script>
       </form>
     {% endif %}
     {% if event.venue.user == user %}
-    <div class="edit-event">
-      <a href="{% url 'update' event.id %}">Edit</a>
-      <a href="{% url 'delete' event.id %}">Delete</a>
-    </div>
+      <div class="edit-event">
+        <a href="{% url 'update' event.id %}">Edit</a>
+        <a href="{% url 'delete' event.id %}">Delete</a>
+      </div>
     {% endif %}
   </div>
 </div>
