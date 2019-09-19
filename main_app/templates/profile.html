@@ -2,7 +2,7 @@
 {% block content %}
 
 <section class="ticket-list">
-<h1 class="events-header">{{ user }}'s Tickets</h1>
+<h1 class="events-header">{{ user|title }}'s Tickets</h1>
 {% if tickets|length > 0 %}
   {% for ticket in tickets %}
     
