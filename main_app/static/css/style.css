@@ -178,6 +178,18 @@ footer  {
   padding-top: 100px;
 }
 
+.formation-login {
+  padding-bottom: 35px;
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-top: 25px;
+}
+
+.formation-login p {
+  margin-top: -10px;
+}
+
 /* cards and builtins */
 .input-steez {
   width: 25%;
@@ -221,7 +233,8 @@ input:not([type]), input[type=text]:not(.browser-default), input[type=password]:
 /* events listing page */
 .events-listing {
   background-image: url('https://i.imgur.com/0R2TzR9.jpg');
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   background-size: cover;
   text-align: center;
   background-attachment: fixed;
@@ -382,11 +395,21 @@ input#search.search-bar {
 }
 
 .ticket-list-item {
-  background: rgba(0,0,0,.75);
+  background: rgba(0,0,0,.75) !important;
+  color: #a7ffeb;
+  padding-top: 20px;
 }
 
 .ticket-display {
   color: #a7ffeb;
+}
+
+.card-content .ticket-p {
+  color: #a7ffeb;
+}
+
+.card-title-profile {
+  padding-top: 30px;
 }
 
 /* Media Queries */
@@ -400,6 +423,25 @@ input#search.search-bar {
 
 /* 992px width and down */
 @media only screen and (max-width: 992px) {
+  .mobile-nav {
+    background: #00695c;
+    margin-top: 50%;
+    transform: translateY(-50%);
+    height: fit-content;
+    text-align: center;
+  }
+
+  .sidenav {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    width: 100%;
+  }
+
+  .mobile-nav li a {
+    color: #fff;
+    font-size: 20px;
+  }
+
   .card-det {
     width: 80%;
   }
@@ -454,6 +496,10 @@ input#search.search-bar {
   .events-header {
     padding-top: 50px;
     padding-bottom: 25px;
+  }
+
+  .formation-login {
+    width: 90%;
   }
 
   .formation-add {

@@ -5,14 +5,15 @@
 <h1 class="events-header">{{ user }}'s Tickets</h1>
 {% if tickets|length > 0 %}
   {% for ticket in tickets %}
-    <div class="card">
-      <div class="card-content ticket-list-item">
-        <span class="card-title">{{ ticket.event.artists }}</span>
-        <p>Venue: {{ ticket.event.venue.name }}</p>
-        <p>Date: {{ ticket.event.date }}</p>
-        <p>Address: {{ ticket.event.venue.address }}</p>
-      </div>
-    </div>
+    
+      <div class="card ticket-list-item">
+        <span class="card-title card-title-profile">{{ ticket.event.artists }}</span>
+        <div class="card-content">
+          <p class="ticket-p">Venue: {{ ticket.event.venue.name }}</p>
+          <p class="ticket-p">Date: {{ ticket.event.date }}</p>
+          <p class="ticket-p">Address: {{ ticket.event.venue.address }}</p>
+        </div>
+    
   {% endfor %}
 {% else %}
   <div class="card ticket-list-item">
