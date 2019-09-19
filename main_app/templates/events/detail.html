@@ -25,14 +25,13 @@
           data-amount="500"
           data-locale="auto">
         </script>
-        <!-- <button type="submit" class="btn">Tickets</button> -->
       </form>
     {% endif %}
     {% if event.venue.user == user %}
-    <div class="edit-event">
-      <a href="{% url 'update' event.id %}">Edit</a>
-      <a href="{% url 'delete' event.id %}">Delete</a>
-    </div>
+      <div class="edit-event">
+        <a href="{% url 'update' event.id %}">Edit</a>
+        <a href="{% url 'delete' event.id %}">Delete</a>
+      </div>
     {% endif %}
   </div>
 </div>
