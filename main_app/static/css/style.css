@@ -395,11 +395,21 @@ input#search.search-bar {
 }
 
 .ticket-list-item {
-  background: rgba(0,0,0,.75);
+  background: rgba(0,0,0,.75) !important;
+  color: #a7ffeb;
+  padding-top: 20px;
 }
 
 .ticket-display {
   color: #a7ffeb;
+}
+
+.card-content .ticket-p {
+  color: #a7ffeb;
+}
+
+.card-title-profile {
+  padding-top: 30px;
 }
 
 /* Media Queries */
