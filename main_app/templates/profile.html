@@ -2,7 +2,7 @@
 {% block content %}
 
 <section class="ticket-list">
-<h1 class="events-header">{{ user }}'s Tickets</h1>
+<h1 class="events-header">{{ user|title }}'s Tickets</h1>
 {% if tickets|length > 0 %}
   {% for ticket in tickets %}
     
@@ -13,7 +13,7 @@
           <p class="ticket-p">Date: {{ ticket.event.date }}</p>
           <p class="ticket-p">Address: {{ ticket.event.venue.address }}</p>
         </div>
-    
+      </div>
   {% endfor %}
 {% else %}
   <div class="card ticket-list-item">
